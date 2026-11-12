@@ -2,6 +2,8 @@
 
 A complete, fast, mobile-first static website for **shophellixstudio.com**. Includes a showcase homepage, filterable product catalog, individual wallpaper landing pages, journal/blog, three starter posts, SEO metadata, sitemap, RSS feed, a 404 page, and analytics hooks.
 
+Brand colors are Midnight Indigo `#141B31`, Champagne Gold `#D7B77A`, warm ivory `#F9F5EE`, muted lavender and soft powder blue accents. The exact user-provided HellixStudio emblem is integrated into the site.
+
 The artwork previews in `src/static/images/` come from existing HellixStudio creative assets. The site is a **preview**, not an update to your live domain, until you deploy it.
 
 ## What's in the ZIP?
@@ -84,7 +86,7 @@ Before enabling Google Analytics, update the privacy notice and any consent mech
 
 - Product details and current digital file counts should be checked against the live Etsy listings. The preview images come from previous HellixStudio creative assets and may include outdated text baked into the artwork.
 - All source images used here are web-compressed previews, not high-resolution digital product downloads.
-- The logo in the header is a typographic approximation; replace it if you want your exact brand logo.
+- The supplied original navy-and-gold HellixStudio emblem is included in the header and footer as optimized web assets (see `src/static/images/hellix-logo.webp`).
 - Blog articles are starter posts written for this website; revise any claims and publish dates as needed.
 - Existing video links were not guessed. You can attach your real YouTube videos when published.
 - The website and checkout are separate. Etsy handles transactions and delivery.
@@ -92,3 +94,11 @@ Before enabling Google Analytics, update the privacy notice and any consent mech
 ## Optional enhancements
 
 Connect Google Search Console, add Pinterest-rich original images, place buyer-intent posts into an editorial calendar, and consider a Git-backed editor if Markdown becomes cumbersome.
+
+## Quick interactive preview (without publishing)
+
+**Windows:** Double-click `Preview Website.bat`. It opens http://localhost:8000 and serves the entire website. You need Python 3 installed. Close the terminal to stop the preview.
+
+**macOS:** Run `Preview Website.command` in Terminal (or `cd site && python3 -m http.server 8000`).
+
+This is a local, interactive browser preview, not a public link. It uses the exact pages, logo, and artwork in the ZIP. It does not modify your currently published domain.
