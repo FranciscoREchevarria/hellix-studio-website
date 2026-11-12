@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero section-band">
+  <div class="hero-speckles" aria-hidden="true">✧ <span>✦</span> ✧</div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="overline"><span class="eyebrow-rule"></span> IMAGINATIVE ART FOR YOUR IPHONE</span>
+      <h1>Carry a little<br><em>magic</em> everywhere.</h1>
+      <p class="hero-desc">Dreamy places, cozy corners and beautiful little escapes — illustrated as wallpapers to make your everyday screen feel extraordinary.</p>
+      <div class="action-row"><a class="button button-dark" href="/collections/">Explore the wallpapers <span>↗</span></a><a class="text-link" href="/journal/">Discover the journal <span>↗</span></a></div>
+      <div class="hero-footnote"><span class="status-dot"></span> Digital downloads <span class="middot">·</span> Instant access via Etsy <span class="middot">·</span> Art made to be lived with</div>
+    </div>
+    <div class="hero-visual" aria-label="HellixStudio winter artwork shown inside iPhone mockups">
+      <div class="hero-halo"></div>
+      <div class="phone phone-back"><img src="/images/glasshouse-art.webp" alt="Snowy glasshouse glowing with Christmas lights" fetchpriority="high"><span class="phone-island"></span><span class="phone-date">Wednesday, December 24</span><span class="phone-clock">9:41</span></div>
+      <div class="phone phone-front"><img src="/images/gingerbread-art.webp" alt="Magical gingerbread bakery glowing on a snowy winter evening" fetchpriority="high"><span class="phone-island"></span><span class="phone-date">Wednesday, December 24</span><span class="phone-clock">9:41</span></div>
+      <div class="hero-caption-card"><span class="hero-caption-icon">✧</span><span><strong>Art for the everyday</strong><small>Thoughtful Lock & Home Screen stories</small></span></div>
+      <span class="hero-float-star" aria-hidden="true">✳</span>
+    </div>
+  </div>
+  <div class="container scroll-note"><span>SCROLL TO EXPLORE</span><span>↓</span></div>
+</section>
+<section class="section section-categories">
+  <div class="container">
+    <div class="section-heading centered"><span class="overline">THE CURATED WORLD</span><h2>Find the mood that <em>moves you.</em></h2><p>Every collection is a tiny place to get lost in. Where will your screen take you?</p></div>
+    <div class="category-grid">
+      <a href="/collections/?category=Christmas" class="category-card category-christmas"><img src="/images/christmas-bundle.webp" alt="Snowy Christmas village iPhone wallpaper designs" loading="lazy"><span class="category-shade"></span><span class="category-content"><small>01 / SEASONAL MAGIC</small><strong>Winter wonderlands</strong><span>Explore Christmas art <b aria-hidden="true">↗</b></span></span></a>
+      <a href="/collections/?category=Bookish" class="category-card category-bookish"><img src="/images/dark-academia.webp" alt="Candlelit Christmas library wallpapers" loading="lazy"><span class="category-shade"></span><span class="category-content"><small>02 / COZY CORNERS</small><strong>Bookish escapes</strong><span>Explore library art <b aria-hidden="true">↗</b></span></span></a>
+      <a href="/collections/?category=Storybook" class="category-card category-storybook"><img src="/images/gingerbread-art.webp" alt="Gingerbread winter bakery wallpaper artwork" loading="lazy"><span class="category-shade"></span><span class="category-content"><small>03 / WHIMSICAL WORLDS</small><strong>Storybook days</strong><span>Explore whimsical art <b aria-hidden="true">↗</b></span></span></a>
+    </div>
+  </div>
+</section>
+<section class="section section-products" id="featured">
+  <div class="container">
+    <div class="section-heading split-heading"><div><span class="overline">SMALL ART. BIG FEELINGS.</span><h2>A few little <em>favorites.</em></h2></div><a class="text-link" href="/collections/">See all wallpapers <span>↗</span></a></div>
+    <div class="product-grid">{% for product in products %}
+    <article class="product-card">
+      <a class="product-image" href="/wallpapers/{{ product.slug }}/" aria-label="View {{ product.name }} details"><img src="/images/{{ product.image }}" alt="{{ product.image_alt }}" loading="lazy"><span class="product-badge">{{ product.badge }}</span><span class="product-image-arrow" aria-hidden="true">↗</span></a>
+      <div class="product-details"><span class="product-category">{{ product.category }}</span><h3><a href="/wallpapers/{{ product.slug }}/">{{ product.name }}</a></h3><a class="product-shop-link" href="{{ product.etsy_url }}" target="_blank" rel="noopener noreferrer" data-etsy data-product="{{ product.slug }}" data-location="homepage">View on Etsy <span>↗</span></a></div>
+    </article>
+    {% endfor %}</div>
+  </div>
+</section>
+<section class="feature-story">
+  <div class="container feature-grid">
+    <div class="feature-image"><img src="/images/moon-garden-art.webp" loading="lazy" alt="Moonlit magical garden filled with luminous flowers and soft starlight"><span class="feature-image-label">a little more wonder, every day ✧</span></div>
+    <div class="feature-copy"><span class="overline">THE HELLIXSTUDIO FEELING</span><h2>Not just a background.<br><em>A little world.</em></h2><p>We love the spaces in between reality and daydreams — candlelit libraries, luminous gardens, snowy windows and faraway skies. Our artwork is made to bring those fleeting feelings to the screen you see most.</p><p>Thoughtfully composed. Rich in atmosphere. Always a little enchanted.</p><a href="/about/" class="button button-outline">Our creative story <span>↗</span></a></div>
+  </div>
+</section>
+<section class="section section-steps">
+  <div class="container"><div class="section-heading centered"><span class="overline">SIMPLE BY DESIGN</span><h2>Your new screen in <em>three steps.</em></h2></div>
+    <div class="steps-grid"><div class="step"><span class="step-index">01</span><span class="step-icon">✧</span><h3>Find your little world</h3><p>Browse the artwork and choose the colors, mood and story you love.</p></div><div class="step"><span class="step-index">02</span><span class="step-icon">♡</span><h3>Purchase on Etsy</h3><p>Check out securely through our Etsy shop and access your digital files.</p></div><div class="step"><span class="step-index">03</span><span class="step-icon">↗</span><h3>Make it yours</h3><p>Save your wallpaper images and set your matching Lock & Home Screens.</p></div></div>
+    <div class="steps-link"><a class="text-link" href="/journal/iphone-wallpaper-setup/">Read our easy setup guide <span>↗</span></a></div>
+  </div>
+</section>
+<section class="section section-journal"><div class="container"><div class="section-heading split-heading"><div><span class="overline">NOTES FROM THE STUDIO</span><h2>Stories beyond <em>the screen.</em></h2></div><a href="/journal/" class="text-link">Visit the journal <span>↗</span></a></div><div class="article-grid">{% for post in articles %}
+ <article class="article-card"><a class="article-thumb" href="/journal/{{ post.slug }}/"><img src="/images/{{ post.image }}" alt="Artwork for {{ post.title }}" loading="lazy"><span class="image-arrow">↗</span></a><div class="article-meta">{{ post.category }} <span>·</span> {{ post.reading_time }}</div><h3><a href="/journal/{{ post.slug }}/">{{ post.title }}</a></h3><p>{{ post.excerpt }}</p><a class="article-more" href="/journal/{{ post.slug }}/">Read the story <span>→</span></a></article>
+{% endfor %}</div></div></section>
+<section class="faq-section"><div class="container faq-grid"><div><span class="overline">THE LITTLE DETAILS</span><h2>Questions, <em>answered.</em></h2><p>Everything you need to know before inviting a little more magic onto your screen.</p></div><div class="faq-list"><details><summary>Are the wallpapers physical products? <span>+</span></summary><p>No. These are digital downloads for your phone. No physical item is shipped.</p></details><details><summary>Where do I purchase and download them? <span>+</span></summary><p>Every purchase happens on the HellixStudio Etsy shop. The Etsy listing shows the exact files you will receive and your download instructions.</p></details><details><summary>Do the wallpapers come as matching pairs? <span>+</span></summary><p>Our regular sets are designed around coordinated Lock and Home Screen artwork. Bundles may contain several pairs. Always check the specific Etsy listing for the current contents.</p></details><details><summary>Can I use the artwork commercially? <span>+</span></summary><p>Wallpaper downloads are intended for personal use only. Please do not redistribute or resell the original files.</p></details></div></div></section>
+<section class="end-cta"><div class="container end-cta-inner"><span class="end-cta-star">✳</span><span class="overline">A LITTLE MAGIC AWAITS</span><h2>Find your next <em>favorite view.</em></h2><p>Your screen is a canvas. Make it feel like you.</p><a class="button button-light" href="https://www.etsy.com/shop/HellixStudio" target="_blank" rel="noopener noreferrer" data-etsy data-product="shop" data-location="homepage-final">Explore HellixStudio on Etsy <span>↗</span></a></div></section>
+{% endblock %}
