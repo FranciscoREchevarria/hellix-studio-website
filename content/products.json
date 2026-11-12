@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "christmas-wallpaper-bundle",
+    "name": "Christmas Wallpaper Collection",
+    "eyebrow": "The signature collection",
+    "category": "Christmas",
+    "badge": "5 matching pairs",
+    "description": "A little holiday village for your pocket. Five coordinated Lock and Home Screen pairs, full of nostalgic Christmas warmth.",
+    "details": "A curated collection of five matching Christmas-inspired wallpaper pairs — ten individual JPG images designed for easy iPhone customization.",
+    "image": "christmas-bundle.webp",
+    "image_alt": "HellixStudio Christmas iPhone wallpaper collection featuring snowy village artwork in two phone mockups",
+    "etsy_url": "https://www.etsy.com/listing/4607381917/christmas-iphone-wallpaper-bundle",
+    "includes": "10 JPG wallpapers · 5 matching pairs",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "slug": "dark-academia-christmas-library",
+    "name": "Dark Academia Christmas Library",
+    "eyebrow": "A bookish winter escape",
+    "category": "Bookish",
+    "badge": "Lock + Home",
+    "description": "Candlelit shelves, evergreen boughs and storybook windows — an atmospheric Christmas library for book lovers.",
+    "details": "An enchanting, bookish Christmas world with warm windows, glowing lights, and a quiet winter atmosphere. See the Etsy listing for the exact included files and current product details.",
+    "image": "dark-academia.webp",
+    "image_alt": "Dark Academia Christmas Library wallpaper artwork showing candlelit bookshelves and a decorated Christmas tree",
+    "etsy_url": "https://www.etsy.com/listing/4599095249/dark-academia-christmas-library-iphone",
+    "includes": "Digital iPhone wallpaper set",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "slug": "gingerbread-christmas-village",
+    "name": "Gingerbread Christmas Village",
+    "eyebrow": "Cozy & whimsical",
+    "category": "Storybook",
+    "badge": "A cozy favorite",
+    "description": "Frosted rooftops, sugared windows and warm bakery light in a delightfully cozy winter scene.",
+    "details": "Whimsical winter storytelling meets sweet gingerbread warmth. Explore the full wallpaper set and included files on Etsy.",
+    "image": "gingerbread-art.webp",
+    "image_alt": "Watercolor-style gingerbread bakery in snow with glowing windows and frosted decorations",
+    "etsy_url": "https://www.etsy.com/listing/4606737058/gingerbread-christmas-village-iphone",
+    "includes": "Digital iPhone wallpaper set",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "slug": "pink-ribbon-christmas-tree",
+    "name": "Pink Ribbon Christmas Tree",
+    "eyebrow": "Soft & romantic",
+    "category": "Christmas",
+    "badge": "Holiday favorite",
+    "description": "Blush pink ribbons, delicate ornaments and softly painted holiday magic for a sweeter Christmas aesthetic.",
+    "details": "A soft pink holiday story with ribbon details and watercolor-inspired textures. Check Etsy for the current set contents and delivery details.",
+    "image": "pink-christmas.webp",
+    "image_alt": "Pink Christmas iPhone wallpapers with a watercolor Christmas tree, blush bows, and phone mockups",
+    "etsy_url": "https://www.etsy.com/listing/4598532498/pink-ribbon-christmas-tree-iphone",
+    "includes": "Digital iPhone wallpaper set",
+    "featured": true,
+    "order": 4
+  }
+]
