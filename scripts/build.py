@@ -93,8 +93,8 @@ def build() -> None:
                    related_articles=[x for x in POSTS if x['slug']!=p['slug']][:2],og_image=p['image'],jsonld=structured(data),is_article=True)
     build_page('about.html','/about/','About the Art | HellixStudio',
                'Get to know HellixStudio, an independent creative brand making magical, nostalgic and painterly iPhone wallpaper art.',nav='about')
-    build_page('privacy.html','/privacy/','Privacy Notice | HellixStudio',
-               'Read about privacy and external shopping links on the HellixStudio website.')
+    build_page('privacy.html','/privacy/','Pin Uploader Privacy Policy | HellixStudio',
+               'Privacy policy for Pin Uploader, a personal Pinterest scheduling tool operated by Francisco Rodríguez for HellixStudio. It describes the Google, Pinterest, and Discord information the app accesses, how that information is used, and that it is stored locally.')
     build_page('notfound.html','/404.html','Page Not Found | HellixStudio','The page you requested could not be found.')
 
     (OUTPUT/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {URL}/sitemap.xml\n',encoding='utf-8')

@@ -42,6 +42,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:#D7B77A
 .faq-section{background:#F4EEE3}.faq-section .overline{color:#977445}.faq-section .faq-list details{border-bottom-color:#C8BDAF}.faq-section summary{color:#141B31}
 .end-cta{background:radial-gradient(circle at 50% 20%,#30415F 0%,#141B31 69%);border-block:1px solid rgba(215,183,122,.25)}.end-cta-star{color:#D7B77A}.end-cta h2 em{color:#D7B77A}.end-cta p{color:#CFD5E4}
 .site-footer{background:#0C1428;border-top:1px solid rgba(215,183,122,.27)}.site-footer p,.site-footer small{color:#B4BFD3}.site-footer a:hover{color:#D7B77A}.footer-heading{color:#D7B77A}.footer-logo{font-size:1.04rem}.footer-logo .brand-icon{width:78px;height:78px}.footer-bottom{border-top-color:rgba(215,183,122,.22);color:#AAB7CF}
+.prose-simple h2{margin:2.4rem 0 .7rem;font-size:clamp(1.85rem,3vw,2.5rem)}
+.prose-simple h2:first-of-type{margin-top:.2rem}
+.prose-simple p{margin:0 0 1rem}
+.prose-simple a{color:#8E6B38;text-decoration:underline;text-underline-offset:.18em}
+.policy-updated{margin-bottom:1.6rem;font-size:.92rem;letter-spacing:.02em}
 .page-hero,.journal-banner{background:#E8E0D4}.page-hero h1 em,.journal-banner h2 em{color:#96703E}.catalog-section,.product-page,.article-body-layout,.prose-simple{background:#F9F5EE}.catalog-grid .product-card{color:#141B31}.catalog-grid .product-details h3{color:#141B31}.catalog-grid .product-shop-link{color:#141B31}.catalog-grid .product-category{color:#926B35}.related-section,.more-stories{background:#EEE8DC}.related-section .product-grid{color:#141B31}.related-section .product-image{border-color:#CBBCA9}.related-section .product-badge{background:#D7B77A}
 .aside-card,.included-card{background:#EDE5D8}.article-content a{color:#8E6B38}.article-content blockquote{border-color:#D7B77A}.article-content blockquote p{color:#334056}.product-info .overline,.article-header .overline{color:#9B7843}
 /* keep catalogue products readable when global ink variables are not inherited */
